@@ -1,0 +1,10 @@
+# Site settings
+title: Leandro's Website
+email: lferrazfarias@albany.edu
+description: Leandro is a web developer from Recife, Brazil.
+url: leoffarias.github.io
+github_username: leoffarias
+
+# Build settings
+markdown: kramdown
+permalink: pretty
