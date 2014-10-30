@@ -1,5 +1,5 @@
 ---
-title: My first post
+title: One more
 layout: post
 ---
 
