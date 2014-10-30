@@ -19,8 +19,8 @@ title: Markdown Practice
 ### Header Level 3
  
 
-   *Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-   *Aliquam tincidunt mauris eu risus.
+   * Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+   * Aliquam tincidunt mauris eu risus.
 
  ![cat gif](http://i.imgur.com/v1gUYem.gif)
  
