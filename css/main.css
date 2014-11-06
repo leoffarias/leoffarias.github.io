@@ -1,0 +1,181 @@
+*{
+	box-sizing: border-box; /*check prefixes*/
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.45;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	font-weight:400;
+}
+
+p { 
+	margin-bottom: 1.3em;
+	max-width: 35em; 
+}
+
+h1, h2, h3, h4 {
+	margin: 1.414em 0 0.5em;
+	font-weight: inherit;
+	line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+}
+
+h2 {
+	font-size: 1.728em;
+}
+
+h3 {
+	font-size: 1.44em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+a{
+	color:red;
+}
+
+a:hover {
+	text-decoration: none;
+	color:orange;
+}
+
+/* Layout */
+.container {
+	max-width:1000px;
+	margin: 0 auto; /*auto vai centralizar. o 0 eh pra cima e baixo, o auto pras laterais*/
+}
+
+@media (max-width: 1050px) {
+	.container{
+		padding-left:1em;
+		padding-right:1em;
+	}
+}
+
+.site-header {
+	padding: 2em 0;
+}
+
+.site-title {
+	/*float:left;*/
+	font-weight: bold;
+	font-size:1.25em;
+	color:tomato;
+	text-decoration:none;
+}
+
+.site-title:hover{
+	background:tomato;
+	color:white;
+}
+
+.hero-img {
+	max-width: 100%;
+}
+
+
+
+/* Navigation */
+.header-nav {
+	list-style:none;
+	margin:0; /*Quando tira os bullets, ainda fica com uma margem e padding esquerda.*/
+	padding:0;
+}
+
+.header-nav li {
+	/*display:inline-block;*/
+	margin-bottom:0.25em;
+}
+
+@media (min-width: 600px) {
+	.header-nav li {
+		display:inline-block;
+	}
+
+	.navbar {
+	float:right;
+	}
+
+	.site-title {
+	float:left;
+	}
+
+	.nav-link {
+		border-radius:1em;
+	}
+}
+
+.nav-link {
+	background:#ddd;
+	padding:0.25em 0.75em;
+	text-decoration: none;
+	color:black;
+	margin: 0 0.25em;
+	/*border-radius: 1em;*/
+	display:block;
+}
+
+.nav-link:hover {
+	background:lightblue;
+}
+
+.site-footer {
+	margin-top:3em;
+	background: black;
+	color:white;
+}
+
+/*Columns*/
+
+@media(min-width: 630px){
+	.col {
+		float:left;
+		width: 33.33%;*/
+	}
+	.content-columns {
+	text-align: center;
+	}
+}
+
+
+
+/*Utilities*/
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
